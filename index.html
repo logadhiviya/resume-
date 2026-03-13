@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Loga Dhiviya T N — Software Developer Portfolio. Final-year B.Tech ECE student at VIT Chennai."/>
+  <title>Loga Dhiviya — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- CURSORS -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- ═══════════════════════════════════════════
+     PORTFOLIO PAGE
+     ═══════════════════════════════════════════ -->
+<div id="portfolioPage" class="page active">
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-logo">LD<span>//</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#extra">Activities</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right"></div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <canvas id="heroCanvas" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;"></canvas>
+    <div class="hero-orb orb-teal"></div>
+    <div class="hero-orb orb-purple"></div>
+
+    <div class="hero-left">
+      <p class="hero-eyebrow">Final-Year B.Tech · VIT Chennai · Open to All Software Roles</p>
+      <h1 class="hero-name">
+        <span class="solid">LOGA</span>
+        <span class="outline">DHIVIYA</span>
+      </h1>
+      <p class="hero-subtitle">
+        [ <span class="typewriter"></span><span style="color:var(--accent3);animation:blink 1s step-end infinite">|</span> ]
+      </p>
+      <p class="hero-bio" id="heroBio">
+        Electronics &amp; Computer Engineering student passionate about building intelligent systems —
+        from <strong>quantum-inspired ML</strong> to <strong>cloud-powered IoT</strong>.
+        Quick learner, team player, event organiser. Ready to create real impact.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">↓ View Projects</a>
+        <a href="https://github.com/logadhiviya" target="_blank" rel="noopener" class="btn btn-outline">GitHub ↗</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+      <div class="hero-counters">
+        <div class="counter-item">
+          <div class="counter-num" data-target="3"    data-dec="0" data-suffix="+">0</div>
+          <div class="counter-label">Projects</div>
+        </div>
+        <div class="counter-item">
+          <div class="counter-num" data-target="8.25" data-dec="2" data-suffix="">0</div>
+          <div class="counter-label">CGPA</div>
+        </div>
+        <div class="counter-item">
+          <div class="counter-num" data-target="70"   data-dec="0" data-suffix="+">0</div>
+          <div class="counter-label">Participants Led</div>
+        </div>
+        <div class="counter-item">
+          <div class="counter-num" data-target="3"    data-dec="0" data-suffix="">0</div>
+          <div class="counter-label">Clubs</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="photo-wrapper">
+        <div class="photo-frame">
+          <img src="profile.png" alt="Loga Dhiviya T N"/>
+        </div>
+        <div class="photo-glow"></div>
+        <div class="photo-corner corner-tl"></div>
+        <div class="photo-corner corner-tr"></div>
+        <div class="photo-corner corner-bl"></div>
+        <div class="photo-corner corner-br"></div>
+        <div class="hero-badge badge-1">⚡ AWS IoT</div>
+        <div class="hero-badge badge-2">🔬 Quantum ML</div>
+        <div class="hero-badge badge-3">🎓 VIT '26</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <p class="eyebrow">Who I Am</p>
+        <h2 class="section-title">About <em>Me</em></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-body reveal">
+          <p id="aboutPara1">I'm <strong>Loga Dhiviya T N</strong>, a passionate final-year B.Tech student specialising in Electronics and Computer Engineering at VIT Chennai. I thrive at the intersection of hardware intelligence and software innovation.</p>
+          <p id="aboutPara2">My work spans <strong>quantum-inspired machine learning</strong>, cloud-based IoT systems, full-stack web platforms, and competitive event leadership. I bring both technical depth and strong soft skills to every challenge.</p>
+          <p id="aboutPara3">I'm actively seeking a <strong>challenging software role</strong> where I can grow fast, contribute meaningfully, and build things that matter.</p>
+          <div class="about-highlights">
+            <span class="highlight-chip">⚡ Open to All Software Roles</span>
+            <span class="highlight-chip">🌐 Full-Stack Web</span>
+            <span class="highlight-chip">☁️ AWS Cloud</span>
+            <span class="highlight-chip">🤖 Machine Learning</span>
+            <span class="highlight-chip">🔬 Quantum Computing</span>
+            <span class="highlight-chip">🏆 Event Organiser</span>
+          </div>
+        </div>
+        <div class="contact-card reveal">
+          <p class="contact-heading">// Contact Info</p>
+          <div class="contact-row"><div class="c-icon">✉</div><div><div class="c-label">Email</div><div class="c-value"><a href="mailto:logadhiviya@gmail.com">logadhiviya@gmail.com</a></div></div></div>
+          <div class="contact-row"><div class="c-icon">📞</div><div><div class="c-label">Phone</div><div class="c-value">+91 97865 73990</div></div></div>
+          <div class="contact-row"><div class="c-icon">💼</div><div><div class="c-label">LinkedIn</div><div class="c-value"><a href="https://linkedin.com/in/loga-dhiviya" target="_blank" rel="noopener">linkedin.com/in/loga-dhiviya</a></div></div></div>
+          <div class="contact-row"><div class="c-icon">🐙</div><div><div class="c-label">GitHub</div><div class="c-value"><a href="https://github.com/logadhiviya" target="_blank" rel="noopener">github.com/logadhiviya</a></div></div></div>
+          <div class="contact-row"><div class="c-icon">📍</div><div><div class="c-label">Location</div><div class="c-value">Chennai, India</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ── -->
+  <section id="education" style="background:var(--bg2);">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <p class="eyebrow">Academic Journey</p>
+        <h2 class="section-title">Edu<em>cation</em></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="edu-timeline">
+        <div class="edu-item reveal">
+          <div class="edu-meta"><span class="edu-year">2022–2026</span><span class="edu-board">CGPA Scale</span></div>
+          <div class="edu-main"><div><div class="edu-degree">B.Tech — Electronics &amp; Computer Engineering</div><div class="edu-school">Vellore Institute of Technology (VIT), Chennai</div></div><div class="edu-score">8.25 <small>/10</small></div></div>
+        </div>
+        <div class="edu-item reveal">
+          <div class="edu-meta"><span class="edu-year">2020–2022</span><span class="edu-board">CBSE · HSC</span></div>
+          <div class="edu-main"><div><div class="edu-degree">Higher Secondary Certificate (HSC)</div><div class="edu-school">Vedic Vidyashram · Mathematics &amp; Biology</div></div><div class="edu-score">83.2 <small>%</small></div></div>
+        </div>
+        <div class="edu-item reveal">
+          <div class="edu-meta"><span class="edu-year">2019–2020</span><span class="edu-board">CBSE · SSC</span></div>
+          <div class="edu-main"><div><div class="edu-degree">Secondary School Certificate (SSC)</div><div class="edu-school">Vedic Vidyashram</div></div><div class="edu-score">89.2 <small>%</small></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <p class="eyebrow">Arsenal</p>
+        <h2 class="section-title">My <em>Skills</em></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="skills-layout">
+        <div class="skill-panel reveal">
+          <div class="skill-panel-title">💻 Programming</div>
+          <div class="skill-bar-list">
+            <div class="skill-bar-item"><div class="skill-bar-header"><span class="skill-bar-name">Python</span><span class="skill-bar-pct">88%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="88"></div></div></div>
+            <div class="skill-bar-item"><div class="skill-bar-header"><span class="skill-bar-name">Java</span><span class="skill-bar-pct">78%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="78"></div></div></div>
+            <div class="skill-bar-item"><div class="skill-bar-header"><span class="skill-bar-name">C / C++</span><span class="skill-bar-pct">75%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="75"></div></div></div>
+            <div class="skill-bar-item"><div class="skill-bar-header"><span class="skill-bar-name">SQL</span><span class="skill-bar-pct">80%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="80"></div></div></div>
+            <div class="skill-bar-item"><div class="skill-bar-header"><span class="skill-bar-name">JavaScript</span><span class="skill-bar-pct">72%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="72"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-panel reveal">
+          <div class="skill-panel-title">☁️ Cloud &amp; AI/ML</div>
+          <div class="skill-bar-list">
+            <div class="skill-bar-item"><div class="skill-bar-header"><span class="skill-bar-name">AWS IoT Core</span><span class="skill-bar-pct">82%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="82"></div></div></div>
+            <div class="skill-bar-item"><div class="skill-bar-header"><span class="skill-bar-name">Machine Learning</span><span class="skill-bar-pct">78%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="78"></div></div></div>
+            <div class="skill-bar-item"><div class="skill-bar-header"><span class="skill-bar-name">Scikit-learn</span><span class="skill-bar-pct">75%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="75"></div></div></div>
+            <div class="skill-bar-item"><div class="skill-bar-header"><span class="skill-bar-name">Qiskit</span><span class="skill-bar-pct">65%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="65"></div></div></div>
+            <div class="skill-bar-item"><div class="skill-bar-header"><span class="skill-bar-name">Pandas</span><span class="skill-bar-pct">80%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="80"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-panel reveal">
+          <div class="skill-panel-title">🛠 Web &amp; Tools</div>
+          <div class="skill-bar-list">
+            <div class="skill-bar-item"><div class="skill-bar-header"><span class="skill-bar-name">HTML5 / CSS3</span><span class="skill-bar-pct">85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="85"></div></div></div>
+            <div class="skill-bar-item"><div class="skill-bar-header"><span class="skill-bar-name">MySQL / DynamoDB</span><span class="skill-bar-pct">78%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="78"></div></div></div>
+            <div class="skill-bar-item"><div class="skill-bar-header"><span class="skill-bar-name">MQTT / IoT</span><span class="skill-bar-pct">76%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="76"></div></div></div>
+            <div class="skill-bar-item"><div class="skill-bar-header"><span class="skill-bar-name">Git / GitHub</span><span class="skill-bar-pct">80%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-pct="80"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-panel reveal" style="grid-column:1/-1;">
+          <div class="skill-panel-title">🤝 Soft Skills</div>
+          <div class="skill-tags" id="softSkillTags">
+            <span class="skill-tag">🎯 Leadership</span>
+            <span class="skill-tag">🤝 Teamwork</span>
+            <span class="skill-tag">📋 Event Management</span>
+            <span class="skill-tag">💡 Problem Solving</span>
+            <span class="skill-tag">📣 Communication</span>
+            <span class="skill-tag">⚡ Quick Learner</span>
+            <span class="skill-tag">🎨 Creative Thinking</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects" style="background:var(--bg2);">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <p class="eyebrow">What I've Built</p>
+        <h2 class="section-title">Pro<em>jects</em></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <div class="project-card reveal">
+          <div class="proj-number">01</div><div class="proj-year">2025</div>
+          <div class="proj-name">Quantum Enhanced Intrusion Detection &amp; Anomaly Classification</div>
+          <div class="proj-desc">CAN bus-based IDS for smart EVs using quantum-inspired ML. Classifies network anomalies and detects cyberattacks with high accuracy, with real-time dashboards.</div>
+          <div class="proj-tech"><span class="tech-pill">Python</span><span class="tech-pill">Qiskit</span><span class="tech-pill">Scikit-learn</span><span class="tech-pill">Pandas</span><span class="tech-pill">CAN Dataset</span></div>
+        </div>
+        <div class="project-card reveal">
+          <div class="proj-number">02</div><div class="proj-year">2025</div>
+          <div class="proj-name">Real-Time Health Monitoring System using AWS IoT</div>
+          <div class="proj-desc">AWS IoT-powered heart rate &amp; SpO2 monitoring with SNS alerts, role-based access, and dashboards backed by DynamoDB &amp; RDS via CloudFront.</div>
+          <div class="proj-tech"><span class="tech-pill">AWS IoT Core</span><span class="tech-pill">MQTT</span><span class="tech-pill">DynamoDB</span><span class="tech-pill">SNS</span><span class="tech-pill">JavaScript</span></div>
+        </div>
+        <div class="project-card reveal">
+          <div class="proj-number">03</div><div class="proj-year">2024</div>
+          <div class="proj-name">Artworks Showcase &amp; E-Commerce Platform</div>
+          <div class="proj-desc">Responsive platform to showcase and sell artworks with filtering, search, and interactive UI. MySQL-backed product and order management.</div>
+          <div class="proj-tech"><span class="tech-pill">HTML5</span><span class="tech-pill">CSS3</span><span class="tech-pill">JavaScript</span><span class="tech-pill">MySQL</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXTRACURRICULAR ── -->
+  <section id="extra">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <p class="eyebrow">Beyond Code</p>
+        <h2 class="section-title">Extra<em>curricular</em></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="extra-grid">
+        <div class="extra-card reveal"><div class="extra-role">Event Organiser · Problem Setter</div><div class="extra-title">Code Quest — Technovit Fest, VIT (2024)</div><div class="extra-desc">Led a competitive coding event with 70+ participants across multiple colleges. Handled end-to-end: problem design, MCQs, coding challenges &amp; logistics.</div><span class="extra-badge">70+ Participants</span></div>
+        <div class="extra-card reveal"><div class="extra-role">Marketing · Participant Engagement</div><div class="extra-title">College Event Marketing, VIT (2023)</div><div class="extra-desc">Managed event promotions and outreach across colleges, significantly boosting cross-campus participation and visibility.</div><span class="extra-badge">Cross-College Outreach</span></div>
+        <div class="extra-card reveal"><div class="extra-role">Active Member</div><div class="extra-title">VITeach Club</div><div class="extra-desc">Contributed to VIT's tech community through collaborative learning, technical initiatives, and active event participation.</div><span class="extra-badge">Technical Club · VIT</span></div>
+        <div class="extra-card reveal"><div class="extra-role">Active Member · Designer</div><div class="extra-title">Fine Arts Club &amp; Tamil Mandram</div><div class="extra-desc">Designed posters for club/college events and participated actively in cultural and organisational activities.</div><span class="extra-badge">Design · Culture · Arts</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" style="background:var(--bg2);">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <p class="eyebrow">Get In Touch</p>
+        <h2 class="section-title">Con<em>tact</em></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="contact-layout">
+        <div class="reveal">
+          <h3>Let's Build Something Together</h3>
+          <p>I'm open to software internships, full-time roles, and collaborative projects. Drop a message!</p>
+          <div class="contact-links">
+            <a href="mailto:logadhiviya@gmail.com" class="contact-link"><div class="cl-icon">✉</div>logadhiviya@gmail.com</a>
+            <a href="https://linkedin.com/in/loga-dhiviya" target="_blank" rel="noopener" class="contact-link"><div class="cl-icon">💼</div>linkedin.com/in/loga-dhiviya</a>
+            <a href="https://github.com/logadhiviya" target="_blank" rel="noopener" class="contact-link"><div class="cl-icon">🐙</div>github.com/logadhiviya</a>
+            <a href="tel:+919786573990" class="contact-link"><div class="cl-icon">📞</div>+91 97865 73990</a>
+          </div>
+        </div>
+        <div class="contact-form reveal">
+          <div class="form-row">
+            <div class="form-group"><label class="form-label">Your Name</label><input class="form-input" id="cfName" type="text" placeholder="John Doe"/></div>
+            <div class="form-group"><label class="form-label">Your Email</label><input class="form-input" id="cfEmail" type="email" placeholder="john@example.com"/></div>
+          </div>
+          <div class="form-group"><label class="form-label">Subject</label><input class="form-input" id="cfSubject" type="text" placeholder="Job Opportunity / Collaboration"/></div>
+          <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" id="cfMsg" placeholder="Tell me about the role..."></textarea></div>
+          <button class="form-submit" id="submitBtn" type="button" onclick="submitContact()">SEND MESSAGE →</button>
+          <p class="form-msg" id="formMsg"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">LOGA DHIVIYA</div>
+      <nav class="footer-nav">
+        <a href="#about">About</a><a href="#education">Education</a>
+        <a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="https://linkedin.com/in/loga-dhiviya" target="_blank" rel="noopener" class="social-btn">💼</a>
+        <a href="https://github.com/logadhiviya" target="_blank" rel="noopener" class="social-btn">🐙</a>
+        <a href="mailto:logadhiviya@gmail.com" class="social-btn">✉</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Loga Dhiviya T N</p>
+      <p class="footer-made">Built with <span>♥</span> · Open to opportunities</p>
+    </div>
+  </footer>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     ADMIN PAGE
+     ═══════════════════════════════════════════ -->
+<div id="adminPage" class="page">
+
+  <nav class="admin-nav">
+    <div class="admin-nav-logo">LD<span>//</span>ADMIN</div>
+    <div class="admin-nav-right">
+      <span class="admin-mode-badge">⚙ ADMIN MODE</span>
+      <button class="view-portfolio-btn" onclick="switchToPortfolio()">VIEW PORTFOLIO</button>
+      <button class="nav-logout" onclick="logout()">⏏ LOGOUT</button>
+    </div>
+  </nav>
+
+  <div class="admin-header">
+    <div class="admin-header-top">
+      <div>
+        <div class="admin-title">Admin <span>Dashboard</span></div>
+        <div class="admin-subtitle">&gt; Manage portfolio content in real-time</div>
+      </div>
+      <div class="admin-stats">
+        <div class="admin-stat"><div class="admin-stat-num" id="statProjects">3</div><div class="admin-stat-label">Projects</div></div>
+        <div class="admin-stat"><div class="admin-stat-num" id="statSkills">7</div><div class="admin-stat-label">Skills</div></div>
+        <div class="admin-stat"><div class="admin-stat-num" id="statMessages">0</div><div class="admin-stat-label">Messages</div></div>
+      </div>
+    </div>
+    <div class="admin-tabs">
+      <button class="admin-tab active" onclick="switchAdminTab('bio', this)">✏️ Bio / About</button>
+      <button class="admin-tab"        onclick="switchAdminTab('projects', this)">🗂 Projects</button>
+      <button class="admin-tab"        onclick="switchAdminTab('skills', this)">⚡ Skills</button>
+      <button class="admin-tab"        onclick="switchAdminTab('messages', this)">📬 Messages</button>
+    </div>
+  </div>
+
+  <div class="admin-body">
+
+    <!-- BIO PANEL -->
+    <div class="admin-panel active" id="panel-bio">
+      <div class="admin-panel-title">// Edit Bio &amp; About</div>
+      <div class="admin-card">
+        <div class="admin-field"><label class="admin-label">Hero Bio</label><textarea class="admin-textarea" id="adminHeroBio">Electronics &amp; Computer Engineering student passionate about building intelligent systems — from quantum-inspired ML to cloud-powered IoT. Quick learner, team player, event organiser. Ready to create real impact.</textarea></div>
+        <div class="admin-field"><label class="admin-label">About Paragraph 1</label><textarea class="admin-textarea" id="adminAbout1">I'm Loga Dhiviya T N, a passionate final-year B.Tech student specialising in Electronics and Computer Engineering at VIT Chennai. I thrive at the intersection of hardware intelligence and software innovation.</textarea></div>
+        <div class="admin-field"><label class="admin-label">About Paragraph 2</label><textarea class="admin-textarea" id="adminAbout2">My work spans quantum-inspired machine learning, cloud-based IoT systems, full-stack web platforms, and competitive event leadership. I bring both technical depth and strong soft skills to every challenge.</textarea></div>
+        <div class="admin-field"><label class="admin-label">About Paragraph 3</label><textarea class="admin-textarea" id="adminAbout3">I'm actively seeking a challenging software role where I can grow fast, contribute meaningfully, and build things that matter.</textarea></div>
+        <div class="admin-actions"><button class="admin-btn admin-btn-primary" onclick="saveBio()">💾 SAVE BIO</button></div>
+      </div>
+    </div>
+
+    <!-- PROJECTS PANEL -->
+    <div class="admin-panel" id="panel-projects">
+      <div class="admin-panel-title">// Add New Project</div>
+      <div class="admin-card">
+        <div class="admin-row">
+          <div class="admin-field"><label class="admin-label">Project Name</label><input class="admin-input" id="newProjName" placeholder="e.g. AI Chatbot"/></div>
+          <div class="admin-field"><label class="admin-label">Year</label><input class="admin-input" id="newProjYear" placeholder="2025"/></div>
+        </div>
+        <div class="admin-field"><label class="admin-label">Description</label><textarea class="admin-textarea" id="newProjDesc" placeholder="Brief project description..."></textarea></div>
+        <div class="admin-field"><label class="admin-label">Tech Stack (comma separated)</label><input class="admin-input" id="newProjTech" placeholder="Python, TensorFlow, Flask"/></div>
+        <div class="admin-actions"><button class="admin-btn admin-btn-primary" onclick="addProject()">+ ADD PROJECT</button></div>
+      </div>
+      <div class="admin-panel-title" style="margin-top:28px;">// Existing Projects</div>
+      <div class="item-list" id="adminProjectList"></div>
+    </div>
+
+    <!-- SKILLS PANEL -->
+    <div class="admin-panel" id="panel-skills">
+      <div class="admin-panel-title">// Add New Skill</div>
+      <div class="admin-card">
+        <div class="admin-row">
+          <div class="admin-field"><label class="admin-label">Skill Name</label><input class="admin-input" id="newSkillName" placeholder="e.g. React"/></div>
+        </div>
+        <div class="admin-actions"><button class="admin-btn admin-btn-primary" onclick="addSkill()">+ ADD SKILL TAG</button></div>
+      </div>
+      <div class="admin-panel-title" style="margin-top:28px;">// Current Soft Skill Tags</div>
+      <div class="admin-card">
+        <div class="skill-tags" id="adminSoftTags" style="gap:10px;"></div>
+        <p style="font-family:var(--font-mono);font-size:0.68rem;color:var(--muted);letter-spacing:1px;margin-top:16px;">Click × to remove a skill tag</p>
+      </div>
+    </div>
+
+    <!-- MESSAGES PANEL -->
+    <div class="admin-panel" id="panel-messages">
+      <div class="admin-panel-title">// Contact Form Messages</div>
+      <div id="adminMessagesList"></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- TOAST NOTIFICATION -->
+<div class="admin-toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
